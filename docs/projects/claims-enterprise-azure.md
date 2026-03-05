@@ -20,8 +20,7 @@ Un cliente reporta un reclamo (accidente, salud, hogar). La organización debe:
 ---
 
 ## Arquitectura (mini-diagrama)
-
-![mini-diagrama.]([claims-enterprise-azure.png](https://github.com/diegoquinonez1/architecture-portfolio-azure/blob/main/docs/projects/claims-enterprise-azure.svg))
+![mini-diagrama.](https://github.com/diegoquinonez1/architecture-portfolio-azure/blob/main/docs/projects/claims-enterprise-azure.svg)
 ```plantuml
 @startuml
 title Claims Enterprise (Azure) - Mini Architecture
