@@ -20,24 +20,38 @@ Un cliente reporta un reclamo (accidente, salud, hogar). La organización debe:
 ---
 
 ## Arquitectura (mini-diagrama)
-```mermaid
-flowchart TB
-  U[Usuario/Canal] --> APIM[Azure API Management]
 
-  APIM --> API[Claims.Api<br/>(Azure App Service)]
+![mini-diagrama.](claims-enterprise-azure.png)
+```plantuml
+@startuml
+title Claims Enterprise (Azure) - Mini Architecture
 
-  API --> SBQ[Service Bus Queue<br/>claims.commands]
-  SBQ --> FN[Claims.ProcessorFn<br/>(Azure Functions)]
-  FN --> SQL[Azure SQL Database]
+actor "Usuario/Canal" as U
 
-  API --> AI[Application Insights]
-  FN --> AI
+component "Azure API Management\n(APIM)" as APIM
+component "Claims.Api\n(App Service)" as API
+queue "Service Bus Queue\nclaims.commands" as SBQ
+database "Azure SQL\nDatabase" as SQL
+component "Claims.ProcessorFn\n(Azure Functions)" as FN
+component "Application Insights" as AI
+component "Key Vault" as KV
+queue "DLQ" as DLQ
 
-  API --> KV[Key Vault]
-  FN --> KV
+U --> APIM
+APIM --> API
+API --> SBQ
+SBQ --> FN
+FN --> SQL
 
-  SBQ --> DLQ[(DLQ)]
-```
+API --> AI
+FN --> AI
+
+API --> KV
+FN --> KV
+
+SBQ --> DLQ : poison msgs
+
+@enduml
 
 ---
 
