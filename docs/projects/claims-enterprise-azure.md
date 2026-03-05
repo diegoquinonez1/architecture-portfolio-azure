@@ -52,7 +52,7 @@ FN --> KV
 SBQ --> DLQ : poison msgs
 
 @enduml
-
+```
 ---
 
 ## Componentes principales
