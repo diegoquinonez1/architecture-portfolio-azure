@@ -28,3 +28,9 @@ Portafolio público orientado a roles de **Cloud / Solutions Architect** en Azur
 ## Contacto
 - LinkedIn: [Diego Quiñonez](https://www.linkedin.com/in/diegoquinonez/)
 - Email: dquinonezrodriguez@gmail.com
+
+## Licencia / Uso
+Copyright (c) 2026 Diego Quiñonez. Todos los derechos reservados.
+
+Este repositorio es público únicamente para fines de revisión y evaluación.  
+No se otorga permiso para usar, copiar, modificar o redistribuir este contenido sin autorización escrita del autor.
