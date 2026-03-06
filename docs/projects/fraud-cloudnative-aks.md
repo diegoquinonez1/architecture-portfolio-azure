@@ -1,4 +1,7 @@
-# Fraud Scoring Cloud-Native (AKS)
+---
+layout: default
+title: Fraud Scoring Cloud-Native (AKS)
+---
 
 ## Objetivo general
 Diseñar e implementar una plataforma **cloud-native** de **fraud/risk scoring (0–100)** para seguros, basada en microservicios .NET en **AKS** y un pipeline **event-driven/streaming** con **Azure Event Hubs**, priorizando:
