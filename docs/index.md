@@ -2,9 +2,6 @@
 layout: default
 title: Architecture Portfolio (Azure)
 ---
-
-# Architecture Portfolio (Azure)
-
 Portafolio orientado a roles de **Cloud / Solutions Architect** en Azure.
 
 ## Proyectos
