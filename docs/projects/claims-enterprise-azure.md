@@ -1,8 +1,7 @@
 ---
 layout: default
+title: Claims Enterprise (Azure)
 ---
-
-# Claims Enterprise (Azure)
 
 ## Objetivo general
 Diseñar e implementar una plataforma de **gestión de reclamos (claims)** para seguros, orientada a **integración enterprise** en Azure, priorizando:
