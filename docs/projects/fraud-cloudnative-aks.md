@@ -23,7 +23,7 @@ A partir de eventos (por ejemplo, “reclamo reportado”), el sistema calcula u
 ---
 
 ## Arquitectura (mini-diagrama)
-![mini-diagrama.](https://github.com/diegoquinonez1/architecture-portfolio-azure/blob/main/docs/projects/fraud-cloudnative-aks.svg)
+![mini-diagrama](./fraud-cloudnative-aks.svg)
 ```plantuml
 @startuml
 title Fraud Scoring (AKS) - Mini Architecture
